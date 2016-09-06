@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+// Styles
+import '../../styles/dashboard.css';
+
 export default class Overview extends Component {
   constructor(props) {
     super(props);
@@ -11,15 +14,18 @@ export default class Overview extends Component {
     return (
       <div className="overview-container">
         <div className="overview-item">
-          <h1>Item 1</h1>
+          <h1>$200.54</h1>
+          <p>Last Transfer</p>
         </div>
 
         <div className="overview-item">
-          <h1>Item 2</h1>
+          <h1>$500.66</h1>
+          <p>Spent This Month</p>
         </div>
 
         <div className="overview-item">
-          <h1>Item 3</h1>
+          <h1>2,314</h1>
+          <p>Transactions</p>
         </div>
       </div>
     );

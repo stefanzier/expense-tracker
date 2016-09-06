@@ -3,7 +3,7 @@ import { render } from 'react-dom'
 import { Router, Route, browserHistory } from 'react-router'
 
 // Components
-import Dashboard from './components/dashboard';
+import Dashboard from './components/dashboard/dashboard';
 
 // Default Stylesheet
 import './index.css';
