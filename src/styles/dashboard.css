@@ -1,0 +1,72 @@
+.overview-container {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  background-color: #27AE60;
+}
+
+.overview-item {
+  flex: 1;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.overview-item p {
+  font-size: 20;
+  font-weight: 200;
+  margin-top: 20;
+}
+
+.transactions-container {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.transactions-header {
+  text-align: center;
+  text-transform: uppercase;
+  color: #27AE60;
+  letter-spacing: 3px;
+  font-size: 10px;
+}
+
+.transaction-history {
+  margin-top: 20px;
+}
+
+.transaction-container {
+  display: flex;
+  background-color: #ECF0F1;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border: 1px solid #27AE60;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  margin-top: 3px;
+}
+
+.transaction-title-container {
+  flex: 1;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.transaction-title {
+  color: #27AE60;
+  font-weight: 400;
+}
+
+.transaction-amount-container {
+  flex: 1;
+  text-align: right;
+  padding-right: 20px
+}
+
+.transaction-amount {
+  color: #E74C3C;
+  font-weight: 700;
+}

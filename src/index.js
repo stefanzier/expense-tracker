@@ -1,9 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import { render } from 'react-dom';
+import { Router, Route, browserHistory } from 'react-router';
+
+// Components
+import Dashboard from './components/dashboard/dashboard';
+
+// Default Stylesheet
 import './index.css';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+render((
+  <Router history={browserHistory}>
+    <Route path="/" component={Dashboard}>
+    </Route>
+  </Router>
+), document.getElementById('root'))
