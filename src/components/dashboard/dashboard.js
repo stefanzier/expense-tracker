@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 // Components
 import Overview from './overview';
+import Transactions from './transactions';
 
 export default class Dashboard extends Component {
   constructor(props) {
@@ -12,7 +13,11 @@ export default class Dashboard extends Component {
 
   render() {
     return (
-      <Overview />
+      <div>
+        <Overview />
+        <Transactions />
+      </div>
+
     );
   }
 }
