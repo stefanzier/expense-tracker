@@ -17,8 +17,6 @@ export default class Transactions extends Component {
         this.setState({isLoading: false});
         const data = jsonData.data;
         this.setState({transactions: data});
-
-        console.log(this.state.transactions);
       })
   }
 

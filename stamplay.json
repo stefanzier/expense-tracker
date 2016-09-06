@@ -1,0 +1,10 @@
+{
+  "appId": "box-expense-tracker",
+  "apiKey": "9d2c9977c401f1972d51fec04c95bbd404aa2a8564a57160eeca6097419f7f95",
+  "public": "./build",
+  "ignore": [
+    "stamplay.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
