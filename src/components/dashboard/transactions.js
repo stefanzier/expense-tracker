@@ -6,7 +6,7 @@ import Transaction from './transaction';
 export default class Transactions extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { transactions: [], isLoading: true };
   }
 
   componentDidMount() {
@@ -14,32 +14,39 @@ export default class Transactions extends Component {
     fetch(url)
       .then( response => response.json() )
       .then( jsonData => {
-        console.log(jsonData) 
+        this.setState({isLoading: false});
+        const data = jsonData.data;
+        this.setState({transactions: data});
 
-        // randomIds.forEach(randomId => {
-        //   walls.push(jsonData[randomId]);
-        // });
-
-        this.setState({
-          isLoading: false,
-          transactions: jsonData.data,
-        });  
-
+        console.log(this.state.transactions);
       })
-      .catch( err => console.log("Fetch error: " + err) );
   }
 
   render() {
-    return (
-      <div className="transactions-container">
-        <div className="transactions-header">
-          <h1>Transaction history</h1>
-        </div>
+    var { transactions, isLoading } = this.state;
 
-        <div className="transaction-history">
-          <Transaction title="AWS Monthly Billing *7812" amount="-$230.46"/>
+    if (isLoading) {
+      return (
+        <h1>Loading...</h1>
+      );
+    } else {
+      return (
+        <div className="transactions-container">
+          <div className="transactions-header">
+            <h1>Transaction history</h1>
+          </div>
+
+          <div className="transaction-history">
+            {transactions.map(index => {
+              return (
+                <Transaction key={index.id} title={index.description} amount={index.amount}/>
+              );
+            })}
+
+          </div>
         </div>
-      </div>
-    );
+      );
+
+    }
   }
 }
