@@ -36,9 +36,11 @@ export default class Transactions extends Component {
 
           <div className="transaction-history">
             {transactions.map(index => {
-              return (
-                <Transaction key={index.id} title={index.description} amount={index.amount}/>
-              );
+              if (index.amount > 0) {
+                return (
+                  <Transaction key={index.id} title={index.name} amount={index.amount.toFixed(2)}/>
+                );
+              }
             })}
 
           </div>
