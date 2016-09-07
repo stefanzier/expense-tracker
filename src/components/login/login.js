@@ -17,11 +17,16 @@ export default class Login extends Component {
 
     return (
       <div className="login-container">
-        <h1>$status</h1>
+        <div className="brand-container">
+          <h1 className="login-title">$status</h1>
+          <p className="login-title">Financial Insight analysis for your organization</p>
+        </div>
 
-        <button className="login-button" onClick={this.boxLogin.bind(this)}>
-          <a className="link">Log in with Box</a>
-        </button>
+        <div className="button-container">
+          <button className="login-button" onClick={this.boxLogin.bind(this)}>
+            <a className="link">Log in with Box</a>
+          </button>
+        </div>
       </div>
     );
   }

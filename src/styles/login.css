@@ -1,42 +1,36 @@
 .login-container {
+  display: flex;
+  min-height: 750px;
   text-align: center;
-  padding-top: 10%;
 }
 
-.login-container h1 {
+.brand-container {
+  flex: 1;
+  min-height: 750px;
+  margin-top: 270px;
+}
+
+.button-container {
+  flex: 1;
+  background-color: #27AE60;
+  min-height: 750px;
+}
+
+.login-title {
   color: #27AE60;
-  letter-spacing: 5px;
-}
 
-.login-input {
-  text-align: center;
-  width: 30%;
-  height: 40px;
-  margin-bottom: 5px;
-  border: 1px solid #27AE60;
-  border-radius: 5px;
-  font-size: 18px;
-  color: #27AE60;
-  outline: none;
-}
-
-::placeholder {
-  font-size: 18px;
-  margin-top: 10px;
 }
 
 .login-button {
+  margin-top: 300px;
+  height: 50px;
   width: 200px;
-  height: 40px;
-  border-radius: 50px;
-  background-color: #44A4D9;
+  border-radius: 20px;
   border: none;
-  margin-top: 20px;
+  background-color: white
 }
 
 .login-button a {
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  font-weight: 600;
+  color: #27AE60;
+  font-size: 20px
 }

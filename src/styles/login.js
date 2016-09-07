@@ -7,40 +7,33 @@ const {width, height, scale} = Dimensions.get("window"),
 
 export default StyleSheet.create({
     "login-container": {
-        "textAlign": "center",
-        "paddingTop": "10%"
+        "display": "flex",
+        "minHeight": 750,
+        "textAlign": "center"
     },
-    "login-container h1": {
-        "color": "#27AE60",
-        "letterSpacing": 5
+    "brand-container": {
+        "flex": 1,
+        "minHeight": 750,
+        "marginTop": 270
     },
-    "login-input": {
-        "textAlign": "center",
-        "width": "30%",
-        "height": 40,
-        "marginBottom": 5,
-        "border": "1px solid #27AE60",
-        "borderRadius": 5,
-        "fontSize": 18,
-        "color": "#27AE60",
-        "outline": "none"
+    "button-container": {
+        "flex": 1,
+        "backgroundColor": "#27AE60",
+        "minHeight": 750
     },
-    "::placeholder": {
-        "fontSize": 18,
-        "marginTop": 10
+    "login-title": {
+        "color": "#27AE60"
     },
     "login-button": {
+        "marginTop": 300,
+        "height": 50,
         "width": 200,
-        "height": 40,
-        "borderRadius": 50,
-        "backgroundColor": "#44A4D9",
+        "borderRadius": 20,
         "border": "none",
-        "marginTop": 20
+        "backgroundColor": "white"
     },
     "login-button a": {
-        "textDecoration": "none",
-        "fontSize": 20,
-        "color": "white",
-        "fontWeight": "600"
+        "color": "#27AE60",
+        "fontSize": 20
     }
 });
