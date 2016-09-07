@@ -1,0 +1,36 @@
+.login-container {
+  display: flex;
+  min-height: 750px;
+  text-align: center;
+}
+
+.brand-container {
+  flex: 1;
+  min-height: 750px;
+  margin-top: 270px;
+}
+
+.button-container {
+  flex: 1;
+  background-color: #27AE60;
+  min-height: 750px;
+}
+
+.login-title {
+  color: #27AE60;
+
+}
+
+.login-button {
+  margin-top: 300px;
+  height: 50px;
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+  background-color: white
+}
+
+.login-button a {
+  color: #27AE60;
+  font-size: 20px
+}
