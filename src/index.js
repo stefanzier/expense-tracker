@@ -13,7 +13,7 @@ Stamplay.init('box-expense-tracker');
 
 render((
   <Router history={browserHistory}>
-  <Route path="/login" component={Login} />
-    <Route path="/" component={Dashboard} />
+  <Route path="/" component={Login} />
+    <Route path="/dashboard" component={Dashboard} />
   </Router>
 ), document.getElementById('root'))
